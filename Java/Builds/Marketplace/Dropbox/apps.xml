@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <app_0>
+    <name>UDPATE TO 0.6 PRE</name>
+    <version>UPDATE TO 0.6 PRE</version>
+    <iconID>default</iconID>
+    <desc>UPDATE TO 0.6 PRE</desc>
+    <fileID>4velcetdc7t1rgn</fileID>
+    <isLaunchable>true</isLaunchable>
+    <size>9519</size>
+    <extension>.jar</extension>
+  </app_0>
+  <app_1>
+    <name>UPDATE TO 0.6 PRE</name>
+    <version>UPDATE TO 0.6 PRE</version>
+    <iconID>default</iconID>
+    <desc>UPDATE TO 0.6 PRE</desc>
+    <fileID>r2yb3xjri8gilhb</fileID>
+    <isLaunchable>false</isLaunchable>
+    <size>5881</size>
+    <extension>.jar</extension>
+  </app_1>
+</data>

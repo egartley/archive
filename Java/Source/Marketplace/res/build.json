@@ -1,0 +1,11 @@
+{
+    "BuildVersion": {
+        "string": "0.8.7",
+        "double": 0.87,
+        "url-dir": "087pre"
+    },
+    "BuildType": {
+        "string": "pre"
+    },
+    "author": "Evan Gartley"
+}

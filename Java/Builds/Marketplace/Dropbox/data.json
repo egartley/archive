@@ -1,0 +1,49 @@
+{
+	"build": {
+		"pre": {
+			"version": {
+				"string": "0.8",
+				"double": 0.8
+			},
+			"file": {
+				"name": "Marketplace_0.8_pre.jar",
+				"dropbox-id": "8siwqql48w94zlv"
+			}
+		},
+		"stable": {
+			"version": {
+				"string": "none",
+				"double": "none"
+			},
+			"file": {
+				"name": "none",
+				"dropbox-id": "none"
+			}
+		}
+	},
+	"apps": [
+		{
+			"name": "UPDATE TO 0.8 PRE",
+			"description": "UPDATE TO 0.8 PRE",
+			"launchable": false,
+			"compat": "Windows",
+			"file": {
+				"dropbox-id": "r2yb3xjri8gilhb",
+				"type": ".jar",
+				"size": 5881
+			},
+			"version": {
+				"string": "0.9.5",
+				"double": 0.95
+			},
+			"icon": {
+				"dropbox-id": "default",
+				"name": null
+			}
+		}
+	],
+	"panes": {
+		"news": "UPDATE TO 0.8 PRE",
+		"eula": "UPDATE TO 0.8 PRE"
+	}
+}

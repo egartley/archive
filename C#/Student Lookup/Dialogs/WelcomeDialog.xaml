@@ -1,0 +1,66 @@
+﻿<ContentDialog
+    x:Class="Student_Lookup.Dialogs.WelcomeDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    SecondaryButtonText="OK"
+    SecondaryButtonStyle="{StaticResource ButtonRevealStyle}"
+    SecondaryButtonClick="OkayButtonClick"
+    IsSecondaryButtonEnabled="True"
+    Loaded="WelcomeDialog_Loaded">
+
+    <ContentDialog.Resources>
+        <Style x:Key="DistrictTextBoxStyle" TargetType="TextBox">
+            <Setter Property="IsSpellCheckEnabled" Value="False" />
+            <Setter Property="IsTextPredictionEnabled" Value="False" />
+            <Setter Property="AcceptsReturn" Value="False" />
+            <Setter Property="MaxLength" Value="256" />
+            <Setter Property="Margin" Value="0,0,0,8" />
+            <Setter Property="MinWidth" Value="380" />
+            <Setter Property="MaxWidth" Value="500" />
+        </Style>
+        <Style x:Key="DataFileTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Visibility" Value="Collapsed" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Margin" Value="12,0,0,0" />
+        </Style>
+        <Style x:Key="DataFileIconTextBlockStyle" TargetType="TextBlock" BasedOn="{StaticResource DataFileTextBlockStyle}">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontFamily" Value="Segoe MDL2 Assets" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0" />
+        </Style>
+    </ContentDialog.Resources>
+
+    <StackPanel Margin="0,0,0,18">
+
+        <TextBlock x:Uid="WelcomeDialog_Welcome" FontSize="25" FontWeight="Bold" Text="Welcome!" />
+        <TextBlock x:Uid="WelcomeDialog_BrowseToFile" Text="First, let's get some initial data" Margin="0,28,0,0" />
+
+        <Grid Margin="0,8,0,4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox Name="DataFileTextBox" Grid.Column="0" x:Uid="WelcomeDialog_DataFileTextBox" MinWidth="350" AcceptsReturn="False" IsSpellCheckEnabled="False" IsTextPredictionEnabled="False" TextWrapping="NoWrap" TabIndex="1" IsEnabled="False" Text="No file chosen" />
+            <Button Name="BrowseButton" Grid.Column="1" x:Uid="WelcomeDialog_BrowseButton" Margin="8,0,0,0" Content="Browse" Click="BrowseButton_Click" TabIndex="0" Style="{StaticResource ButtonRevealStyle}" />
+        </Grid>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,32">
+            <TextBlock Name="ValidDataFileIconTextBlock" Text="&#x0E10B;" Foreground="Green" Style="{StaticResource DataFileIconTextBlockStyle}" />
+            <TextBlock Name="InvalidDataFileIconTextBlock" Text="&#x0E10A;" Foreground="Red" Style="{StaticResource DataFileIconTextBlockStyle}" />
+            <TextBlock Name="ValidDataFileTextBlock" x:Uid="WelcomeDialog_ValidDataFileTextBlock" Style="{StaticResource DataFileTextBlockStyle}" />
+            <TextBlock Name="InvalidDataFileTextBlock" x:Uid="WelcomeDialog_InvalidDataFileTextBlock" Style="{StaticResource DataFileTextBlockStyle}"  />
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock x:Uid="WelcomeDialog_EnterDistrictInformationTextBlock" Text="Next, enter information about your district" Margin="0,0,0,8" />
+            <TextBox Name="DistrictTitleTextBox" x:Uid="WelcomeDialog_DistrictTitleTextBox" Style="{StaticResource DistrictTextBoxStyle}" TabIndex="2" PlaceholderText="Title" />
+            <TextBox Name="DistrictAddressTextBox" x:Uid="WelcomeDialog_DistrictAddressTextBox" Style="{StaticResource DistrictTextBoxStyle}" TabIndex="3" PlaceholderText="Address" />
+            <TextBox Name="DistrictStaffMemeberTextBox" x:Uid="WelcomeDialog_DistrictStaffMemberTextBox" Style="{StaticResource DistrictTextBoxStyle}" TabIndex="4" PlaceholderText="Staff Member" />
+        </StackPanel>
+
+    </StackPanel>
+</ContentDialog>
