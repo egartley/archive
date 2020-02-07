@@ -1,0 +1,60 @@
+{
+	"root-pages": [{
+		"display-title": "Projects",
+		"url": "/projects",
+		"keywords": ["projects", "work", "portfolio"],
+		"desc": "Things that I have worked on, or that are available."
+	}, {
+		"display-title": "Contact",
+		"url": "/contact",
+		"keywords": ["contact", "email", "talk", "support", "twitter", "social media", "media", "question"],
+		"desc": "Questions, comments or concerns should refer here."
+	}, {
+		"display-title": "Marketplace",
+		"url": "/projects/marketplace",
+		"keywords": ["mrkt", "marketplace", "store", "distribution", "app"],
+		"desc": "Distribution platform currently being rewritten for the web."
+	}, {
+		"display-title": "About",
+		"url": "/about",
+		"keywords": ["about", "help", "what", "who", "question"],
+		"desc": "Tech enthusiast, fluent in Java, C#, UWP and web."
+	}, {
+		"display-title": "Donate",
+		"url": "/donate",
+		"keywords": ["donate", "donations", "paypal", "bitcoin", "btc", "give", "support", "currency", "help", "buy"],
+		"desc": "Support future development and upkeep with a small donation of your choosing."
+	}, {
+		"display-title": "Songs",
+		"url": "/songs",
+		"keywords": ["music", "songs", "sing", "lyrics", "audio", "listen"],
+		"desc": "Just some songs that I like, some with meaningful lyrics."
+	}, {
+		"display-title": "Views",
+		"url": "/views",
+		"keywords": ["about", "personal", "conspiracy", "politics", "opinions", "what"],
+		"desc": "Personal views and opinions on various topics"
+	}],
+	"redirections": [{
+		"destination": "https://gab.ai/ev",
+		"url": "/g",
+		"keywords": ["go", "redirection", "gabai", "social", "media", "speech", "free speech", "speak freely", "twitter", "alternative"]
+	},{
+		"destination": "https://github.com/egartley",
+		"url": "/github",
+		"keywords": ["go", "redirection", "code", "source code", "github", "edit", "base", "master", "src", "development", "technology"]
+	},{
+		"destination": "https://www.cia.gov/library/readingroom/docs/CIA-RDP96-00788R001900760001-9.pdf",
+		"url": "/mars",
+		"keywords": ["go", "redirection", "conspiracy", "government", "space", "mars", "aliens", "eti", "world", "cia", "leak", "document", "pdf"]
+	},{
+		"destination": "https://twitter.com/egartley",
+		"url": "/t",
+		"keywords": ["go", "redirection", "twitter", "social media", "media"]
+	},{
+		"destination": "https://twitter.com/egartley",
+		"url": "/twitter",
+		"keywords": ["go", "redirection", "twitter", "social media", "media"]
+	}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"apps": [
+		{
+			"file": {
+				"url": "/stlib/STLib_0.9.5.jar",
+				"name": "STLib_0.9.5.jar",
+				"size": 5881
+			},
+			"version": {
+				"string": "0.9.5",
+				"double": 0.95
+			},
+			"id": "simplethingslibrary",
+			"display-name": "STLib",
+			"short-desc": "Java library. Simple things made easy.",
+			"full-desc": "An external Java library for making simple things easy. Please note this is not the full version, there is a lot more in development.",
+			"compatability": 1,
+			"has-icon": false
+		},
+		{
+			"file": {
+				"url": "/w10utility/win10_info_0.1.jar",
+				"name": "win10_info_0.1.jar",
+				"size": 2032679
+			},
+			"version": {
+				"string": "0.1",
+				"double": 0.1
+			},
+			"id": "w10utility",
+			"display-name": "Win10 Utility",
+			"short-desc": "Displays your current installation info.",
+			"full-desc": "Displays your current installation info. Data is feteched from registry. Full Windows 10 support, untested for Windows 7/8.1.",
+			"compatability": 1,
+			"has-icon": false
+		}
+	]
+}

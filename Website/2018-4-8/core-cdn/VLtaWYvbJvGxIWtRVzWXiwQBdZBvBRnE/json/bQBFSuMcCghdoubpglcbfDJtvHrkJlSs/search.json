@@ -1,0 +1,70 @@
+{
+	"root-pages": [{
+		"display-title": "Projects",
+		"url": "/projects",
+		"keywords": ["projects", "work", "portfolio"],
+		"desc": "Things that I have worked on, or that are available right now"
+	}, {
+		"display-title": "Contact",
+		"url": "/contact",
+		"keywords": ["contacts", "email", "talk", "support", "twitter", "social media", "media"],
+		"desc": "Questions, comments or concerns should refer here."
+	}, {
+		"display-title": "Marketplace",
+		"url": "/projects/marketplace",
+		"keywords": ["mrkt", "marketplace", "store", "distribution"],
+		"desc": "Distribution platform currently being rewritten for the web."
+	}, {
+		"display-title": "About",
+		"url": "/about",
+		"keywords": ["about", "help", "what", "who", "question"],
+		"desc": "Tech enthusiast, fluent in Java, C#, UWP and web. Windows Insider since 2014"
+	}, {
+		"display-title": "Changelog",
+		"url": "/changelog",
+		"keywords": ["changes", "new", "features", "site changelog", "list", "what's new"],
+		"desc": "View recent changes and additions, including techincal details."
+	}, {
+		"display-title": "Donations",
+		"url": "/donate",
+		"keywords": ["donate", "donations", "paypal", "bitcoin", "btc", "give", "support", "currency", "help", "buy"],
+		"desc": "Support future development and upkeep with a small donation of your choosing."
+	}, {
+		"display-title": "Privacy and Copyright",
+		"url": "/privacy",
+		"keywords": ["legal", "privacy policy", "policy", "policies", "copyrights", "agreement", "terms", "conditions"],
+		"desc": "Site-wide privacy policy and copyright notice."
+	}, {
+		"display-title": "Revolutionary Speech from \"V for Vendetta\"",
+		"url": "/revolutionary-speech",
+		"keywords": ["speech", "revolutionary", "vendetta", "trump", "united states", "government", "movie", "v for vendetta", "free speech"],
+		"desc": "Read the inspirational speech from the movie \"V for Vendetta\" (2006 motion picture)"
+	}, {
+		"display-title": "Songs",
+		"url": "/songs",
+		"keywords": ["music", "songs", "sing", "lyrics", "audio", "listen"],
+		"desc": "Some that have meaningful lyrics"
+	}],
+	"redirections": [{
+		"destination": "https://gab.ai/ev",
+		"url": "/g",
+		"keywords": ["go", "redirection", "gabai", "social", "media", "speech", "free speech", "speak freely", "twitter", "alternative"]
+	},{
+		"destination": "https://github.com/egartley",
+		"url": "/github",
+		"keywords": ["go", "redirection", "code", "source code", "github", "edit", "base", "master", "src", "development", "technology"]
+	},{
+		"destination": "https://www.cia.gov/library/readingroom/docs/CIA-RDP96-00788R001900760001-9.pdf",
+		"url": "/mars",
+		"keywords": ["go", "redirection", "conspiracy", "government", "space", "mars", "aliens", "extraterrestrial", "world", "cia", "leak", "document", "pdf"]
+	},{
+		"destination": "https://twitter.com/egartley",
+		"url": "/t",
+		"keywords": ["go", "redirection", "twitter", "social media", "media"]
+	},{
+		"destination": "https://twitter.com/egartley",
+		"url": "/twitter",
+		"keywords": ["go", "redirection", "twitter", "social media", "media"]
+	}
+	]
+}

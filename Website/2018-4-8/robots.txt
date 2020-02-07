@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+User-agent: msnbot-media
+Allow: /
+
+User-agent: yandex
+Allow: /

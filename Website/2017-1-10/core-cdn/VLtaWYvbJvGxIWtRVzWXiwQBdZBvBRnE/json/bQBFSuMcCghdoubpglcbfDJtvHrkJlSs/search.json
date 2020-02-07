@@ -1,0 +1,43 @@
+{
+	"pages": [{
+		"display-title": "Projects",
+		"url": "projects",
+		"keywords": ["projects", "project", "proj", "projs"],
+		"desc": "Anything that is being worked on or available."
+	}, {
+		"display-title": "Contact",
+		"url": "contact",
+		"keywords": ["contact", "contacts", "email", "talk"],
+		"desc": "Questions, comments or concerns should refer here."
+	}, {
+		"display-title": "Marketplace",
+		"url": "projects/marketplace",
+		"keywords": ["mrkt", "marketplace", "store", "market"],
+		"desc": "Distribution platform currently being rewritten for the web."
+	}, {
+		"display-title": "About",
+		"url": "about",
+		"keywords": ["about", "help"],
+		"desc": "About this site's owner among other things."
+	}, {
+		"display-title": "WHOIS Lookup",
+		"url": "whois",
+		"keywords": ["whois", "who is", "whois lookup", "who is lookup", "who is look up", "whois look up", "domain", "registrar", "hosting", "nameserver", "nameservers", "dns"],
+		"desc": "Simple tool to view domain name information such as registrar and nameservers."
+	}, {
+		"display-title": "Changelog",
+		"url": "changelog",
+		"keywords": ["change", "changes", "changelog", "change log", "new", "feature", "features", "site", "site changelog", "site change log", "changes log", "changeslog"],
+		"desc": "View recent changes and additions to this website as a whole."
+	}, {
+		"display-title": "Donate",
+		"url": "donate",
+		"keywords": ["donate", "donation", "donations", "paypal", "bitcoin", "btc", "give", "support"],
+		"desc": "Support future development and upkeep."
+	}, {
+		"display-title": "Privacy and Copyright",
+		"url": "privacy",
+		"keywords": ["privacy", "private", "copyright", "legal", "privacy policy", "policy", "policies", "copyrights", "agreement"],
+		"desc": "Site-wide privacy policy and copyright notices."
+	}]
+}

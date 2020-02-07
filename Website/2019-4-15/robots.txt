@@ -1,0 +1,54 @@
+User-agent: bingbot
+Allow: /
+Disallow: /core-cdn
+Disallow: /upload
+Disallow: /mrkt
+Disallow: /mrkt-cdn
+Disallow: /docs
+Disallow: /go
+Disallow: /metrics
+Disallow: /test
+Disallow: /error
+Disallow: /api
+
+User-agent: msnbot
+Allow: /
+Disallow: /core-cdn
+Disallow: /upload
+Disallow: /mrkt
+Disallow: /mrkt-cdn
+Disallow: /docs
+Disallow: /go
+Disallow: /metrics
+Disallow: /test
+Disallow: /error
+Disallow: /api
+
+User-agent: msnbot-media
+Allow: /
+Disallow: /core-cdn
+Disallow: /upload
+Disallow: /mrkt
+Disallow: /mrkt-cdn
+Disallow: /docs
+Disallow: /go
+Disallow: /metrics
+Disallow: /test
+Disallow: /error
+Disallow: /api
+
+User-agent: yandex
+Allow: /
+Disallow: /core-cdn
+Disallow: /upload
+Disallow: /mrkt
+Disallow: /mrkt-cdn
+Disallow: /docs
+Disallow: /go
+Disallow: /metrics
+Disallow: /test
+Disallow: /error
+Disallow: /api
+
+User-agent: *
+Disallow: /

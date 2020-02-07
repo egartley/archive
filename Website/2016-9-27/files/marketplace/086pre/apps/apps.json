@@ -1,0 +1,21 @@
+{
+	"apps": [
+		{
+			"file": {
+				"url": "/simplethingslibrary/STLib_0.9.5.jar",
+				"name": "STLib_0.9.5.jar",
+				"size": 5881
+			},
+			"version": {
+				"string": "0.9.5",
+				"double": 0.95
+			},
+			"id": "simplethingslibrary",
+			"display-name": "STLib",
+			"short-desc": "Java library. Simple things made easy.",
+			"full-desc": "An external Java library for making simple things easy. Please note this is not the full version, there is a lot more in development.",
+			"compatability": 1,
+			"has-icon": false
+		}
+	]
+}

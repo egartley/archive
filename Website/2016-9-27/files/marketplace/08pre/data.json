@@ -1,0 +1,27 @@
+{
+	"build": {
+		"pre": {
+			"version": {
+				"string": "0.8.5",
+				"double": 0.85
+			},
+			"file": {
+				"name": "Marketplace_0.8.5_pre.jar",
+				"dropbox-id": "http://egartley.net/files/marketplace/Marketplace_0.8.5_pre.jar"
+			}
+		},
+		"stable": {
+			"version": {
+				"string": "none",
+				"double": "none"
+			},
+			"file": {
+				"name": "none"
+			}
+		}
+	},
+	"panes": {
+		"news": "<html><head><style>body{font-family:sans-serif;font-size:10px;}<\/style><\/head><body><b>Current builds:<\/b><br \/>Developmental: <b>0.9 Pre-Release<\/b><br \/>Pre-Release: <b>0.8.5<\/b><br \/>Stable: <b>N/A<\/b><br \/><br \/><b>Posted on 12/25/2015<\/b><br \/>Build 0.8.5 Pre-Release has been pushed out. Take a look at the changes found below. Merry Christmas!<br \/><br \/><a href=\"http://egartley.net/go/mrktcl/\"><b>View changelog<\/b><\/a><\/body><\/html>",
+		"eula": "<html><head><style>body{font-family:sans-serif;font-size:10px;}<\/style><\/head><body><b>Copyright (c) 2015 Evan Gartley - All Rights Reserved<\/b><br \/>This software includes code from the following libraries:<br \/>&#8226; <b>STLib<\/b> (<a href=\"http://egartley.net/files/stlib/license.txt\">License<\/a>)<br \/>&#8226; <b>JSON-Simple<\/b> (<a href=\"http://www.apache.org/licenses/LICENSE-2.0\">License<\/a>)<br \/><br \/>This end user license agreement (the \"EULA\") constitutes an agreement between you and its creator(s). It also governs your use of this program, and its counterparts (the \"Software\"). You are not permitted to take part in any of the following; modification (lawful or unlawful) and/or redistribution of the Software. You may otherwise freely use the Software.<br \/><br \/>If you did not download the Marketplace from egartley.net, please re-download it from egartley.net.<br \/><br \/><b>THIS SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS ORIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<\/b><br \/><br \/>Last edited on November 18th, 2015<br \/>For questions or concerns, email contact@egartley.net<\/body><\/html>"
+	}
+}

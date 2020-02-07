@@ -1,0 +1,14 @@
+------ LICENSE BEGIN ------ 
+Copyright (c) 2015 Evan Gartley - All Rights Reserved
+
+This project uses code from STLib, a Java Library created by Evan
+Gartley. Any project that uses code from STLib must include this comment
+in every source file that uses one or more methods included in STLib.
+	 
+BY USING STLIB, YOU AGREE THAT ALL "METHODS" HAVE BEEN TESTED TO THE BEST
+OF ITS CREATOR'S ABILITY, AND YOU ARE RESPONSIBLE FOR ANY DAMAGE OR
+CORRUPTION DONE TO YOUR SYSTEM.
+	 
+If you have questions or concerns, please email contact@egartley.net
+Last updated Dec 24th, 2015
+------ LICENSE END --------

@@ -1,0 +1,115 @@
+:root { --maximum-root-width: 1706px; --initial-page-content-width: 1189px; --initial-sidebar-container-width: 501px; --minimum-content-container-height: 752px; --container-background-color: #171717; --body-background-color: #373737; --accent-color: #59B4FF }
+
+/* GLOBAL ELEMENT DEFAULTS */
+a { text-decoration: none; color: var(--accent-color); transition: text-decoration .3s linear }
+a:hover, a:active { text-decoration: underline }
+body { background-color: var(--body-background-color); color: white; font-family: "Segoe UI", Arial, sans-serif; -webkit-text-size-adjust: 100% }
+
+/* ROOT CONTAINER(S) */
+.root-container { max-width: var(--maximum-root-width); margin-right: auto; margin-left: auto; margin-top: 8px; margin-bottom: 32px }
+.container { background-color: var(--container-background-color); }
+.container-container { margin-top: 8px; display: flex; min-height: var(--minimum-content-container-height) }
+.container-container .container, .navbar-container { border-style: solid; border-color: var(--container-background-color); border-width: 1px; border-radius: 3px }
+
+/* CONTENT CONTAINERS */
+.navbar-container { height: 96px; display: flex; align-items: center }
+.pagecontent-container { width: var(--initial-page-content-width); min-height: var(--minimum-content-container-height); margin-right: 8px }
+.sidebar-container { width: var(--initial-sidebar-container-width); min-height: var(--minimum-content-container-height) }
+.sidebar-container .widget-container:first-child { margin-top: 32px }
+.footer-container { background-color: transparent; margin-bottom: 32px; text-align: center }
+.logo-container { margin-left: 10px; border-width: 3px; border-color: transparent; border-style: solid; border-radius: 76px; transition: border-color .3s linear }
+.logo-container, .logo-container img { width: 76px; height: 76px; border-radius: 76px }
+.navbar-title-container { margin-left: 16px; margin-top: -8px }
+
+/* NAVIGATION BAR */
+.logo-container:hover { cursor: pointer; border-color: white }
+.navbar-title { font-size: 26px; color: var(--accent-color); transition: color .2s linear }
+.navbar-title:hover { color: white; cursor: pointer }
+.navbar-title-container div.secondary-text { margin-top: 6px }
+.nav-items-container { display: flex; margin-left: 48px }
+.nav-item { border-style: solid; border-color: transparent; border-radius: 3px; border-width: 2px; padding: 0 6px 6px 6px }
+.nav-item-hitbox { padding: 0 24px 6px 24px }
+.nav-item.active { border-bottom-color: var(--accent-color) }
+.nav-item > span { font-size: 24px; transition: color .2s linear }
+.nav-item.active > span { color: var(--accent-color) }
+.nav-item-hitbox:hover > .nav-item.active > span { color: white }
+.nav-item:not(.active) { transition: border-bottom-color .3s linear }
+.nav-item-hitbox:hover > .nav-item:not(.active) > span, .nav-item-hitbox:hover > .nav-item:not(.active) { color: var(--accent-color); border-bottom-color: var(--accent-color) }
+.nav-item-hitbox:hover { cursor: pointer }
+
+/* PAGE */
+.container.pagecontent-container > * { margin-left: 48px; margin-right: 48px }
+.page-title { margin-top: 32px; margin-bottom: 12px; border-style: solid; border-color: var(--accent-color); border-width: 0; border-bottom-width: 2px; padding-bottom: 12px }
+.page-title > span { font-size: 36px; letter-spacing: 3.5px; font-weight: bolder; text-transform: uppercase }
+.page-content { margin-bottom: 32px }
+.page-content > p { font-size: 18px; line-height: 190% }
+.page-content > h2 { margin-top: 48px }
+.page-content img { width: 95%; height: auto }
+
+/* SIDEBAR AND WIDGETS */
+.widget-container { margin-left: 26px; margin-right: 26px; margin-top: 16px; margin-bottom: 42px }
+.widget-title { margin-bottom: 12px }
+.widget-title > span { font-size: 23px }
+.widget-divider { margin-left: 26px; margin-right: 26px; margin-bottom: 32px; border-style: solid; border-color: grey; border-width: 0; border-bottom-width: 1px }
+.widget-content { margin-top: 32px }
+
+/* SPECIFIC WIDGETS */
+.widget-search { display: flex; align-items: center }
+.widget-search > img, .widget-search > img:hover { margin-left: 16px; cursor: pointer }
+.widget-search-textbox { background-color: black; border-color: grey; border-style: solid; border-width: 2px; border-radius: 2px; padding: 9px; font-size: 14px; color: white; width: 100% }
+.widget-social { margin-top: 18px }
+.widget-social div span#image-link { height: 32px }
+.widget-social div span#image-link img { width: 32px; height: 32px; margin-right: 18px }
+.widget-social-container { padding: 14px; padding-left: 6px; padding-right: 20px; display: inline-flex; align-items: center; justify-content: flex-start }
+.widget-social-container:hover, .widget-social-container:hover span#display-text { cursor: pointer; color: white }
+.widget-social-container span#display-text { color: var(--accent-color); transition: color .3s; font-size: 16px }
+
+/* FOOTER */
+#footer-text > * { font-weight: bold; transition: color .3s linear }
+#footer-text > *:not(#delimiter):hover { color: var(--accent-color); cursor: pointer }
+#delimiter:before { content: " - "; }
+
+/* TEXT AND COLOR TEMPLATES */
+.secondary-text { color: grey; font-size: 14px }
+
+/* SEARCH */
+.spin { width: 40px; height: 40px; position: relative; margin: auto }
+.db1, .db2 { width: 100%; height: 100%; border-radius: 50%; background-color: var(--accent-color); opacity: 0.6; position: absolute; top: 0; left: 0; animation: search-spinner 2.0s infinite ease-in-out }
+.db2 { animation-delay: -1.0s }
+@-webkit-keyframes search-spinner {
+	0%, 100% { -webkit-transform: scale(0.0) }
+	50% { -webkit-transform: scale(1.0) }
+}
+@keyframes search-spinner {
+	0%, 100% { transform: scale(0.0); -webkit-transform: scale(0.0) }
+	50% { transform: scale(1.0); -webkit-transform: scale(1.0) }
+}
+div#result-container a#title { font-size: 26px; color: #fff }
+div#result-container a#title:hover { color: var(--accent-color) }
+::-webkit-input-placeholder { color: darkgrey }
+::-moz-placeholder { color: darkgrey }
+
+/* MOBILE */
+@media screen and (max-width:1024px) {
+	:root { --minimum-content-container-height: 512px; --body-background-color: black; --container-background-color: black }
+	body { margin-left: 4px; margin-right: 4px; margin-top: 4px; margin-bottom: 64px }
+	.root-container { margin-top: 0 }
+	.container-container { display: inherit }
+	.pagecontent-container, .sidebar-container { width: 100%; margin-bottom: 12px }
+	.container.pagecontent-container > *, .widget-container, .widget-divider { margin-left: 24px; margin-right: 24px }
+	.page-title { margin-top: 0; padding-top: 24px }
+	.navbar-title-container { display: none }
+	.nav-item > span { font-size: 20px; padding: 6px }
+	.nav-item-hitbox { padding: 0 12px 2px 12px }
+	.nav-item.active { border-bottom-color: transparent }
+	.nav-items-container { margin-left: 0 }
+	.navbar-container { overflow-x: scroll; height: 79px; -webkit-overflow-scrolling: touch }
+	.logo-container, .logo-container img { width: 48px; height: 48px; border-radius: 48px }
+	.page-title > span { font-size: 28px; letter-spacing: 2.75px }
+	.page-meta > span.secondary-text { font-size: 12px; font-weight: bolder }
+	.page-content > p { font-size: 16px; margin-bottom: 16px }
+	.page-content { padding-bottom: 32px; word-wrap: break-word }
+	.page-content img { width: 100% }
+	.widget-divider { margin-bottom: 22px }
+	.widget-container > div { padding-top: 16px }
+}

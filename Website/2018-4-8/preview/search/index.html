@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search - egartley.net</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link href="https://core-cdn.egartley.net/bjefIEeHYVukojSnIKdsIzjzdrqxcwOK/ico/ywMEqSTEafnLegSQzvPIXThEkMMhzYZj/favicon.ico" rel="icon">
+    <link href="https://core-cdn.egartley.net/bjefIEeHYVukojSnIKdsIzjzdrqxcwOK/ico/ywMEqSTEafnLegSQzvPIXThEkMMhzYZj/favicon.ico" rel="shortcut icon" type="images/x-icon">
+    <link href="https://core-cdn.egartley.net/hZDegfHVLKJvtRDhpPEaXUOGXKRdCnfl/css/fpJsilBptcKsEweFtaADyRjiwaASRPNF/design.css" rel="stylesheet" type="text/css">
+    <script src="https://core-cdn.egartley.net/rYTjNOIPtrMPRMfLikXPEcCfIwgbnGGS/js/pdGNiFraWDvcwQltDGamAZyHIgfJBhJH/jquery.js"></script>
+    <script type="text/javascript" src="https://core-cdn.egartley.net/rYTjNOIPtrMPRMfLikXPEcCfIwgbnGGS/js/uqHeBPWEuCAaxOVysmkFmdZDqPzcJvqd/script.js"></script>
+    <script src="https://core-cdn.egartley.net/rYTjNOIPtrMPRMfLikXPEcCfIwgbnGGS/js/MjUABlnBIVgUfolaOPsNYzbmqagXPoWM/search.js"></script>
+</head>
+
+<body>
+    <div class="root-container">
+        <div class="container navbar-container">
+            <!-- LOGO AND TITLE !-->
+            <div class="logo-container" onclick="navigate('/')">
+                <img class="site-logo-img" src="https://core-cdn.egartley.net/ydfZIggolRifIIneoAGyBiyDvCAKOCpi/png/AUksgmgtMWgZzbeXZpLRAABCZCYZsFSp/logo_new.png">
+            </div>
+            <div class="navbar-title-container">
+                <span class="navbar-title" onclick="navigate('/')">egartley.net</span>
+                <br /><span class="secondary-text">Tech enthusiast and proud American</span>
+            </div>
+            <!-- NAVIGATION ITEMS !-->
+            <div class="nav-items-container">
+                <div class="nav-item-hitbox" onclick="navigate('/')">
+                    <div class="nav-item">
+                        <span>Home</span>
+                    </div>
+                </div>
+                <div class="nav-item-hitbox" onclick="navigate('/about')">
+                    <div class="nav-item">
+                        <span>About</span>
+                    </div>
+                </div>
+                <div class="nav-item-hitbox" onclick="navigate('/contact')">
+                    <div class="nav-item">
+                        <span>Contact</span>
+                    </div>
+                </div>
+                <div class="nav-item-hitbox" onclick="navigate('/projects')">
+                    <div class="nav-item">
+                        <span>Projects</span>
+                    </div>
+                </div>
+                <div class="nav-item-hitbox" onclick="navigate('/whois')">
+                    <div class="nav-item">
+                        <span>WHOIS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-container">
+            <div class="container pagecontent-container">
+            	<!-- PAGE CONTENT !-->
+                <div class="page-title">
+                    <span>Search</span>
+                </div>
+                <div class="page-meta">
+                    <span class="secondary-text">Last updated June 3, 2017 at 01:53 PM</span>
+                </div>
+                <div class="page-content">
+                	<p id="qp" style="text-align:center;margin-bottom:32px">
+                		<input id="query" name="search" class="widget-search-textbox" type="text" placeholder="Looking for something?" onkeyup="press(event)">
+                	</p>
+					<div class="spin" style="display:none">
+						<div class="db1"></div>
+						<div class="db2"></div>
+					</div>
+					<p id="results" style="display:none"></p>
+                </div>
+            </div>
+            <div class="container sidebar-container">
+            	<!-- SIDEBAR WIDGETS !-->
+            	<div class="widget-container">
+            		<div>
+            			<div class="widget-title">
+            				<span>Search</span>
+            			</div>
+            			<div class="widget-content widget-search">
+            				<input class="widget-search-textbox" type="text" onkeyup="press(event)" name="search" placeholder="Looking for something?">
+            				<img title="Search this site" alt="icon" src="https://core-cdn.egartley.net/JWbfagwmwYPKpNvyoopzzqtWodFrfELa/svg/jNenYVPzYOyGswLllGnuQhalhzcOLrHD/search.svg" onclick="search()">
+            			</div>
+            		</div>
+            	</div>
+            	<div class="widget-divider"></div>
+            	<div class="widget-container">
+            		<div>
+            			<div class="widget-title">
+            				<span>Social</span>
+            			</div>
+            			<div class="widget-content widget-social">
+            				<div>
+            					<div class="widget-social-container" onclick="navigate('https://go.egartley.net/t/?via=widgetsocial')" title="Twitter">
+            						<span id="image-link"><img src="https://core-cdn.egartley.net/ydfZIggolRifIIneoAGyBiyDvCAKOCpi/png/eXegGgKSkqgBpzhzSnUxbtQfDZzBxOCM/twitter.png" alt="twitter"></span>
+            						<span id="display-text">Twitter</span>
+            					</div>
+            					<div class="widget-social-container" onclick="navigate('https://go.egartley.net/github/?via=widgetsocial')" title="GitHub">
+            						<span id="image-link"><img src="https://core-cdn.egartley.net/ydfZIggolRifIIneoAGyBiyDvCAKOCpi/png/eXegGgKSkqgBpzhzSnUxbtQfDZzBxOCM/github.png" alt="github"></span>
+            						<span id="display-text">GitHub</span>
+            					</div>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </div>
+        </div>
+        <div class="container footer-container">
+        	<!-- FOOTER !-->
+            <span id="footer-text" class="secondary-text">
+        		<span id="copyright-text" onclick="navigate('/privacy/?via=footer')">Copyright © 2017</span>
+            	<span id="delimiter"></span>
+            	<span id="build-text" onclick="navigate('/changelog/?via=footer')">Build 200.001</span>
+            	<span id="delimiter"></span>
+            	<span id="custom-link" onclick="navigate('https://go.egartley.net/github/?via=footer')">GitHub</span>
+            	<span id="delimiter"></span>
+            	<span id="custom-link" onclick="navigate('/privacy/?via=footer')">Privacy</span>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
